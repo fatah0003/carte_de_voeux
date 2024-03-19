@@ -11,7 +11,8 @@ let messageError = document.querySelector("#messageError");
 let urlerror = document.querySelector("#urlerror");
 
 
-submit.addEventListener("click", () => {
+submit.addEventListener("submit", (event) => {
+    event.preventDefault();
     let newMessage = messageArea.value.trim();
     let newPolice = police.value;
     let newColor = textColor.value;
