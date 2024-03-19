@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+   <section class="big_container">
+
+    <section id="first_section">
+
+        <div class="first">
+            <label for="message">Votre message :</label>
+            <textarea placeholder="Tapez votre message ici..." name="" id="message" cols="30" rows="10"></textarea>
+            <p id="messageError">Message Obligatoire</p>
+        </div>
+        <div class="one">
+            <div>
+                <label for="police">Taille de la police :</label>
+                <select name="" id="police">
+                    <option value="choice_one">Petit</option>
+                    <option value="choice_two">Moyen</option>
+                    <option value="choice_three">Grand</option>
+                </select>
+            </div>
+            <div class="two">
+                <label for="color">Couleur du texte :</label>
+                <input type="color" id="color">
+            </div>
+            <div class="two">
+                <label for="fond_color">Couleur du fond :</label>
+                <input class="" type="color" id="fond_color">
+            </div>
+            <div>
+                <label class="" for="url">URL de l'image de fond :</label>
+                <input type="text" id="url">
+                <p id="urlerror">URL Obligatoire</p>
+            </div>
+        </div>
+        <button>Appliquer les réglages</button>
+
+    </section>
+    <section class="card">
+        <img id="imageCard" src="" alt="">
+
+        <p class="text">Votre message apparaitra ici...</p>
+    </section>
+
+   </section>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
