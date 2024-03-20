@@ -11,8 +11,7 @@ let messageError = document.querySelector("#messageError");
 let urlerror = document.querySelector("#urlerror");
 
 
-submit.addEventListener("submit", (event) => {
-    event.preventDefault();
+submit.addEventListener("click", () => {
     let newMessage = messageArea.value.trim();
     let newPolice = police.value;
     let newColor = textColor.value;
@@ -20,8 +19,7 @@ submit.addEventListener("submit", (event) => {
     let newUrl = url.value.trim();
     let cardHeight = "430px";
     let imgHeight = "240px";
-    let imageWidht = "auto";
-    let font;
+    let imageWidht = "400px";
     
     
     if(messageArea.value ===""){
@@ -39,19 +37,10 @@ submit.addEventListener("submit", (event) => {
     img.style.height = imgHeight;
     card.style.backgroundColor = newFond;
     card.style.height = cardHeight
-    img.style.widht = imageWidht;
+    img.style.width = imageWidht;
     text.textContent = newMessage;
     text.style.color = newColor;
-
-    if (newPolice === "choice_one") {
-        font = "20px"
-    } else if (newPolice === "choice_two") {
-        font = "40px"
-    } else if (newPolice === "choice_three") {
-        font = "60px"
-    }
-    text.style.fontSize = font;
+    text.style.fontSize = newPolice;
 }
-
 }
 });

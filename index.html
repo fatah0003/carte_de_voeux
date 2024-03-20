@@ -13,39 +13,35 @@
 
     <section id="first_section">
 
-        <form action="">
-
-            <div class="first">
-                <label for="message">Votre message :</label>
-                <textarea placeholder="Tapez votre message ici..." name="" id="message" cols="30" rows="10"></textarea>
-                <p id="messageError">Message Obligatoire</p>
+        <div class="first">
+            <label for="message">Votre message :</label>
+            <textarea placeholder="Tapez votre message ici..." name="" id="message" cols="30" rows="10"></textarea>
+            <p id="messageError">Message Obligatoire</p>
+        </div>
+        <div class="one">
+            <div>
+                <label for="police">Taille de la police :</label>
+                <select name="" id="police">
+                    <option value="20px">Petit</option>
+                    <option value="40px">Moyen</option>
+                    <option value="60px">Grand</option>
+                </select>
             </div>
-            <div class="one">
-                <div>
-                    <label for="police">Taille de la police :</label>
-                    <select name="" id="police">
-                        <option value="choice_one">Petit</option>
-                        <option value="choice_two">Moyen</option>
-                        <option value="choice_three">Grand</option>
-                    </select>
-                </div>
-                <div class="two">
-                    <label for="color">Couleur du texte :</label>
-                    <input type="color" id="color">
-                </div>
-                <div class="two">
-                    <label for="fond_color">Couleur du fond :</label>
-                    <input class="" type="color" id="fond_color">
-                </div>
-                <div>
-                    <label class="" for="url">URL de l'image de fond :</label>
-                    <input type="text" id="url">
-                    <p id="urlerror">URL Obligatoire</p>
-                </div>
+            <div class="two">
+                <label for="color">Couleur du texte :</label>
+                <input type="color" id="color">
             </div>
-            <button type="submit">Appliquer les réglages</button>
-
-        </form>
+            <div class="two">
+                <label for="fond_color">Couleur du fond :</label>
+                <input class="" type="color" id="fond_color">
+            </div>
+            <div>
+                <label class="" for="url">URL de l'image de fond :</label>
+                <input type="text" id="url">
+                <p id="urlerror">URL Obligatoire</p>
+            </div>
+        </div>
+        <button>Appliquer les réglages</button>
 
     </section>
     <section class="card">
